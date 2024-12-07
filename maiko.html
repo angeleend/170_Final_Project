@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Cafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="maiko.css">
+</head>
+<body>
+    <div class="side-nav">
+        <img class="logo" src="mmcircle.png">
+        <ul class="nav-links">
+            <li><a href="https://www.amazon.com" target="_blank">INSTRUCTIONS & FAQ</a></li>
+            <li><a href="https://www.amazon.com" target="_blank">BEST SELLERS</a></li>
+            <li><a href="https://www.amazon.com" target="_blank">RECOMMENDATION QUIZ</a></li>
+            <li>
+                <span class="menu-title" onclick="toggleDropdown('drink-menu', 'food-menu')">DRINK MENU</span>
+                <ul id="drink-menu" class="dropdown">
+                    <li><a href="https://www.amazon.com" target="_blank">FRAPPES</a></li>
+                    <li><a href="https://www.amazon.com" target="_blank">MILK TEAS & LATTES</a></li>
+                    <li><a href="https://www.amazon.com" target="_blank">NITRO COFFEE</a></li>
+                    <li><a href="https://www.amazon.com" target="_blank">SODAS</a></li>
+                    <li><a href="https://www.amazon.com" target="_blank">TEAS</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="menu-title" onclick="toggleDropdown('food-menu', 'drink-menu')">FOOD MENU</span>
+                <ul id="food-menu" class="dropdown">
+                    <li><a href="https://www.amazon.com" target="_blank">BAKED GOODS</a></li>
+                    <li><a href="https://www.amazon.com" target="_blank">HONEY TOAST</a></li>
+                    <li><a href="https://www.amazon.com" target="_blank">PARFAITS</a></li>
+                    <li><a href="https://www.amazon.com" target="_blank">SHAVED ICE</a></li>
+                    <li><a href="https://www.amazon.com" target="_blank">SOFT SERVE</a></li>
+                    <li><a href="https://www.amazon.com" target="_blank">WAFFLES</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="bottom-buttons">
+            <a href="https://www.amazon.com" target="_blank">
+                <button class="exit-btn">EXIT
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </a>
+            <a href="https://www.amazon.com" target="_blank">
+                <button class="cart-btn">VIEW CART
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="main-content">
+        <input type="text" id="search-bar" placeholder="Search" class="search-bar">
+        <h2 class="section-title">TEAS</h2>
+        <div class="product-grid">
+            <a href="https://www.amazon.com" target="_blank">
+                <div class="product-card">
+                    <img src="mdrink.png">
+                    <div class="product-info">
+                        <p class="drink-name">Matcha Drink</p>
+                        <p class="price">$6.70</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.amazon.com" target="_blank">
+                <div class="product-card">
+                    <img src="mlemon.png">
+                    <div class="product-info">
+                        <p class="drink-name">Matcha Lemon</p>
+                        <p class="price">$6.70</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.amazon.com" target="_blank">
+                <div class="product-card">
+                    <img src="hdrink.png">
+                    <div class="product-info">
+                        <p class="drink-name">Hojicha Drink</p>
+                        <p class="price">$6.70</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="maiko.js" defer></script>
+</body>
+</html>
